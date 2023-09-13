@@ -30,6 +30,8 @@ namespace Exercise
         private void InitializeComponent()
         {
             this.groupBoxKH = new System.Windows.Forms.GroupBox();
+            this.txtIDKH = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -64,23 +66,27 @@ namespace Exercise
             this.btnPrint = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtIDDonVi = new System.Windows.Forms.TextBox();
+            this.txtContactDonVi = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBoxArea1 = new System.Windows.Forms.ComboBox();
             this.txtTenDonVi = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.txtContactDonVi = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.txtIDDonVi = new System.Windows.Forms.TextBox();
             this.btnFind = new System.Windows.Forms.Button();
-            this.txtIDKH = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.groupBoxKH.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxKH
@@ -108,6 +114,23 @@ namespace Exercise
             this.groupBoxKH.TabStop = false;
             this.groupBoxKH.Text = " Khách Hàng";
             this.groupBoxKH.Enter += new System.EventHandler(this.groupBoxKH_Enter);
+            // 
+            // txtIDKH
+            // 
+            this.txtIDKH.Location = new System.Drawing.Point(131, 21);
+            this.txtIDKH.Multiline = true;
+            this.txtIDKH.Name = "txtIDKH";
+            this.txtIDKH.Size = new System.Drawing.Size(280, 20);
+            this.txtIDKH.TabIndex = 17;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 24);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 13);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Mã Khách Hàng: ";
             // 
             // textBox11
             // 
@@ -438,6 +461,31 @@ namespace Exercise
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Đơn Vị Vận Chuyển";
             // 
+            // txtIDDonVi
+            // 
+            this.txtIDDonVi.Location = new System.Drawing.Point(131, 48);
+            this.txtIDDonVi.Multiline = true;
+            this.txtIDDonVi.Name = "txtIDDonVi";
+            this.txtIDDonVi.Size = new System.Drawing.Size(181, 20);
+            this.txtIDDonVi.TabIndex = 12;
+            // 
+            // txtContactDonVi
+            // 
+            this.txtContactDonVi.Location = new System.Drawing.Point(131, 94);
+            this.txtContactDonVi.Multiline = true;
+            this.txtContactDonVi.Name = "txtContactDonVi";
+            this.txtContactDonVi.Size = new System.Drawing.Size(181, 20);
+            this.txtContactDonVi.TabIndex = 11;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(6, 97);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(99, 13);
+            this.label17.TabIndex = 10;
+            this.label17.Text = "Thông Tin Liên Hệ:";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -486,31 +534,6 @@ namespace Exercise
             this.label16.TabIndex = 0;
             this.label16.Text = "Khu Vực: ";
             // 
-            // txtContactDonVi
-            // 
-            this.txtContactDonVi.Location = new System.Drawing.Point(131, 94);
-            this.txtContactDonVi.Multiline = true;
-            this.txtContactDonVi.Name = "txtContactDonVi";
-            this.txtContactDonVi.Size = new System.Drawing.Size(181, 20);
-            this.txtContactDonVi.TabIndex = 11;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(6, 97);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(99, 13);
-            this.label17.TabIndex = 10;
-            this.label17.Text = "Thông Tin Liên Hệ:";
-            // 
-            // txtIDDonVi
-            // 
-            this.txtIDDonVi.Location = new System.Drawing.Point(131, 48);
-            this.txtIDDonVi.Multiline = true;
-            this.txtIDDonVi.Name = "txtIDDonVi";
-            this.txtIDDonVi.Size = new System.Drawing.Size(181, 20);
-            this.txtIDDonVi.TabIndex = 12;
-            // 
             // btnFind
             // 
             this.btnFind.Location = new System.Drawing.Point(88, 577);
@@ -520,28 +543,59 @@ namespace Exercise
             this.btnFind.Text = "Tìm";
             this.btnFind.UseVisualStyleBackColor = true;
             // 
-            // txtIDKH
+            // groupBox5
             // 
-            this.txtIDKH.Location = new System.Drawing.Point(131, 21);
-            this.txtIDKH.Multiline = true;
-            this.txtIDKH.Name = "txtIDKH";
-            this.txtIDKH.Size = new System.Drawing.Size(280, 20);
-            this.txtIDKH.TabIndex = 17;
+            this.groupBox5.Controls.Add(this.textBox1);
+            this.groupBox5.Controls.Add(this.textBox2);
+            this.groupBox5.Controls.Add(this.label18);
+            this.groupBox5.Controls.Add(this.label19);
+            this.groupBox5.Location = new System.Drawing.Point(878, 23);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(362, 101);
+            this.groupBox5.TabIndex = 11;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Trình Trạng ";
             // 
-            // label4
+            // textBox1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 24);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 13);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Mã Khách Hàng: ";
+            this.textBox1.Location = new System.Drawing.Point(131, 55);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(152, 20);
+            this.textBox1.TabIndex = 6;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(131, 25);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(152, 20);
+            this.textBox2.TabIndex = 5;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(6, 58);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(56, 13);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "Tổng Tiền";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(6, 28);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(78, 13);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "Phí Trả Hàng: ";
             // 
             // App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(887, 626);
+            this.ClientSize = new System.Drawing.Size(1369, 645);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.btnFind);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnExit);
@@ -555,6 +609,7 @@ namespace Exercise
             this.Controls.Add(this.groupBoxKH);
             this.Name = "App";
             this.Text = "Phần mềm quản lí đổi trả hàng";
+            this.Load += new System.EventHandler(this.App_Load);
             this.groupBoxKH.ResumeLayout(false);
             this.groupBoxKH.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -565,6 +620,8 @@ namespace Exercise
             this.groupBox4.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -617,6 +674,11 @@ namespace Exercise
         private System.Windows.Forms.Button btnFind;
         private System.Windows.Forms.TextBox txtIDKH;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
     }
 }
 

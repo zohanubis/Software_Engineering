@@ -39,5 +39,10 @@ namespace Exercise
                 e.Cancel = true;
             }
         }
+
+        private void App_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
